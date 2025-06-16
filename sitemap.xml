@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://chronoscope.apphive.site/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Main App Page (if different) -->
+  <url>
+    <loc>https://chronoscope.apphive.site/?i=1</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Legal & Informational Pages -->
+  <url>
+    <loc>https://chronoscope.apphive.site/privacy-policy.html</loc>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://chronoscope.apphive.site/terms-and-conditions.html</loc>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://chronoscope.apphive.site/about.html</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://chronoscope.apphive.site/contact.html</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://chronoscope.apphive.site/disclaimer.html</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Blog Pages -->
+  <url>
+    <loc>https://chronoscope.apphive.site/blog/</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://chronoscope.apphive.site/blog/ChronoScope-The-Tale-of-Time-You-Never-Knew-You-Needed.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+</urlset>

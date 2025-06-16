@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Calculate your exact age in years, months, days, and more. A simple, fast, and private age calculator.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Age Calculator Tool">
+    <meta property="og:description" content="Easily calculate your age with precision. No data collected.">
+    <meta property="og:url" content="https://chronoscope.apphive.site/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://chronoscope.apphive.site/favicon.png">
+    <title>ChronoScope - Your Personal Time Scanner</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme-retro.css" id="retro-theme-link" disabled>
+    <link rel="stylesheet" href="theme-sci-fi.css" id="sci-fi-theme-link" disabled>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=VT323&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body class="crt-overlay">
+    <div class="grid-overlay"></div>
+    <div class="container fade-in">
+        <header>
+            <h1 class="logo glow-text">ChronoScope</h1>
+            <p class="subtitle glow-text">Discover your age in every way possible</p>
+            <div class="theme-buttons">
+                <button id="theme-default">Default</button>
+                <button id="theme-dark">Dark</button>
+                <button id="theme-retro">Retro</button>
+                <button id="theme-sci-fi">Sci-Fi</button>
+            </div>
+        </header>
+
+        <section class="input-section fade-in">
+            <label for="dob">Enter your birthdate:</label>
+            <input type="date" id="dob">
+            <button id="calculate">Calculate →</button>
+        </section>
+
+        <section class="results-section fade-in">
+            <div class="result-card" id="main-age" data-aos="fade-up">
+                <!-- Main Age Result -->
+            </div>
+
+            <div class="result-card" id="timeline-breakdown" data-aos="fade-up">
+                <!-- Timeline Breakdown Result -->
+            </div>
+
+            <div class="result-card" id="birthday-countdown" data-aos="fade-up">
+                <!-- Birthday Countdown Result -->
+            </div>
+
+            <div class="result-card" id="zodiac-info" data-aos="fade-up">
+                <!-- Zodiac Info Result -->
+            </div>
+
+            <div class="result-card" id="day-born" data-aos="fade-up">
+                <!-- Day Born Result -->
+            </div>
+
+            <div class="result-card" id="famous-twin" data-aos="fade-up">
+                <!-- Famous Birthday Twin Result -->
+            </div>
+
+            <!-- New Visualizations Section -->
+            <div class="result-card" id="heartbeat-gauge" data-aos="fade-up">
+                <h3 class="visualization-heading">Age in Heartbeats</h3>
+                <div class="retro-gauge">
+                  <svg viewBox="0 0 200 100" class="gauge">
+                    <defs>
+                      <linearGradient id="gaugeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#ff66c4" />
+                        <stop offset="100%" stop-color="#00fff7" />
+                      </linearGradient>
+                    </defs>
+                    <path class="gauge-bg" d="M10,100 A90,90 0 0,1 190,100" />
+                    <path class="gauge-fill" id="gaugeFill" d="M10,100 A90,90 0 0,1 190,100" />
+                    <line id="needle" x1="100" y1="100" x2="100" y2="20" />
+                    <circle cx="100" cy="100" r="4" class="center-dot" />
+                  </svg>
+                  <div class="gauge-label">
+                    <span>❤️ Age in Heartbeats</span>
+                    <div class="gauge-value" id="gaugeValue">0</div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="result-card" id="lifespan-progress" data-aos="fade-up">
+                <h3 class="visualization-heading">Lifespan Progress</h3>
+                <div id="lifespan-progress-container">
+                    <!-- Progress bar will be rendered here -->
+                </div>
+            </div>
+
+            <div class="result-card life-expectancy-card card-sci-fi panel-sci-fi" id="life-expectancy-card" data-aos="fade-up">
+                <h3 class="visualization-heading">Your Lifespan Insights</h3>
+                <div id="consent-section">
+                    <p>Please consent to see your personalized life expectancy projections.</p>
+                    <label>
+                        <input type="checkbox" id="consent-checkbox"> I understand and consent.
+                    </label>
+                    <button id="consent-button">Show My Projections</button>
+                </div>
+
+                <div id="projection-section" style="display:none;">
+                    <p>Based on your country (<span id="detected-country"></span>), your estimated life expectancy is: <span id="base-lifespan"></span> years.</p>
+                    <h4>Ways to potentially increase your lifespan:</h4>
+                    <ul id="nudges-list">
+                        </ul>
+                    <p class="total-potential">By adopting these healthy habits, your potential lifespan could reach: <span id="total-potential-lifespan"></span> years!</p>
+                </div>
+            </div>
+
+            <div class="result-card fade-in" id="lifespan-comparison" data-aos="fade-up">
+                <h3 class="visualization-heading">Lifespan Comparison</h3>
+                <!-- Lifespan comparison content will be added here by script.js -->
+            </div>
+
+            <div class="result-card fade-in" id="future-milestones" data-aos="fade-up">
+                <h3 class="visualization-heading">Future Milestones</h3>
+                <!-- Future milestones content will be added here by script.js -->
+            </div>
+
+            <div class="result-card fade-in" id="life-in-units" data-aos="fade-up">
+                <h3 class="visualization-heading">Life in Units</h3>
+                <!-- Life in units content will be added here by script.js -->
+            </div>
+
+            <div class="result-card" id="historical-facts" data-aos="fade-up">
+                <!-- Historical Facts Result -->
+            </div>
+        </section>
+
+        <a id="downloadPdfButton" class="download-pdf-button fade-in" href="#">
+            Download Age Report (PDF)
+        </a>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="blog/">Blogs</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                  
+                </ul>
+            </nav>
+            <p class="version-info">© 2025 ChronoScope • v2.0 | Made with love💕 by <a href="https://apphive.site">apphive.site</a></p>
+        </footer>
+    </div>
+
+    <div id="v2-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="rounded-xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white text-center p-4 shadow-md mb-4">
+                <p class="text-lg font-semibold">🎉 What’s New in ChronoScope v2</p>
+                <p class="text-sm">Welcome to ChronoScope v2 — a major upgrade that brings deeper, more personal life insights based on real-world data.</p>
+                <p class="text-base font-semibold mt-4">✨ New in This Version:</p>
+                <ul class="text-sm text-left mx-auto" style="max-width: 300px;">
+                    <li>❤️ Age in Heartbeats<br>Discover how many times your heart has likely beaten since birth — it’s more than you think!</li>
+                    <li>📊 Lifespan Progress Tracker<br>See how far along you are in your journey, based on real life expectancy data by country and gender.</li>
+                    <li>🌍 Localized Lifespan Insights<br>Compare your expected lifespan to the global average, with dynamic tooltips and a smoother UI.</li>
+                    <li>✅ Privacy-First Consent Toggle<br>We now ask for your permission before showing sensitive projections — because your comfort matters.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

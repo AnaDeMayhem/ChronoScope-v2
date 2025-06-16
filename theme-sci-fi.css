@@ -1,0 +1,273 @@
+/* Sci-Fi (Futuristic Tech) Theme - Based on Detailed Guidelines */
+
+:root {
+    /* Core Tech Colors */
+    --primary-sf: #00ffe7; /* Cyan */
+    --secondary-sf: #aa00ff; /* Quantum Purple */
+    --alert-sf: #ff3c41; /* Reactor Red */
+    --background-start-sf: #0e0e2c; /* Dark blue */
+    --background-end-sf: #060616; /* Deep black */
+    --text-base-sf: #e0f7ff; /* Light Plasma Grey - for general text */
+    --text-secondary-sf: #c0c0c0; /* Neutron Silver - for muted text/elements */
+
+    /* Fonts */
+    --font-heading-sf: 'Orbitron', sans-serif;
+    --font-body-sf: 'Rajdhani', sans-serif;
+    --font-alt-sf: 'Share Tech Mono', monospace;
+
+    /* Background */
+    background: radial-gradient(ellipse at center, var(--background-start-sf) 0%, var(--background-end-sf) 100%);
+    color: var(--text-base-sf);
+    font-family: var(--font-body-sf);
+    text-transform: uppercase; /* Thin, uppercase */
+    letter-spacing: 0.05em; /* Tight letter spacing */
+}
+
+/* General body styles for Sci-Fi theme */
+body.sci-fi-theme {
+    background: radial-gradient(ellipse at center, var(--background-start-sf) 0%, var(--background-end-sf) 100%);
+    color: var(--text-base-sf);
+    font-family: var(--font-body-sf);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Header Styles */
+body.sci-fi-theme header {
+    color: var(--primary-sf);
+}
+
+body.sci-fi-theme .logo {
+    font-family: var(--font-heading-sf);
+    color: var(--primary-sf);
+    text-shadow: 0 0 10px var(--primary-sf); /* Holo-glow */
+}
+
+body.sci-fi-theme .subtitle {
+    font-family: var(--font-body-sf);
+    color: var(--text-secondary-sf);
+}
+
+body.sci-fi-theme h1,
+body.sci-fi-theme h2,
+body.sci-fi-theme h3,
+body.sci-fi-theme .title,
+body.sci-fi-theme .visualization-heading {
+    font-family: var(--font-heading-sf);
+    color: var(--secondary-sf);
+    text-shadow: 0 0 8px var(--secondary-sf); /* Holo-glow */
+    border-bottom-color: var(--primary-sf); /* Mono-color outline */
+}
+
+/* Input Section Styles */
+body.sci-fi-theme .input-section {
+    background-color: rgba(14, 14, 44, 0.6); /* Less transparent dark blue */
+    backdrop-filter: blur(10px); /* Glassmorphism blur */
+    border: 1px solid rgba(0, 255, 231, 0.4); /* Less transparent border */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 231, 0.3); /* More visible glow shadow */
+    color: var(--text-base-sf);
+}
+
+body.sci-fi-theme .input-section label {
+    color: var(--text-base-sf);
+}
+
+body.sci-fi-theme .input-section input[type="date"],
+body.sci-fi-theme .input-section input[type="time"] {
+    background-color: rgba(6, 6, 22, 0.5); /* Semi-transparent deep black */
+    color: var(--primary-sf);
+    border: 1px solid var(--secondary-sf);
+    box-shadow: 0 0 5px var(--secondary-sf);
+}
+
+body.sci-fi-theme .input-section button {
+    background: transparent;
+    color: var(--primary-sf);
+    border: 2px solid var(--secondary-sf);
+    padding: 0.75rem 1.5rem; /* Adjusted to match other buttons */
+    font-family: var(--font-body-sf);
+    text-transform: uppercase;
+    box-shadow: 0 0 10px var(--primary-sf);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+body.sci-fi-theme .input-section button:hover {
+    background: var(--secondary-sf);
+    color: var(--background-end-sf);
+    box-shadow: 0 0 20px var(--primary-sf);
+}
+
+/* Results Section Styles */
+body.sci-fi-theme .results-section {
+    gap: 1.5rem;
+}
+
+body.sci-fi-theme .result-card {
+    background-color: rgba(14, 14, 44, 0.3); /* Semi-transparent dark blue */
+    backdrop-filter: blur(10px); /* Glassmorphism blur */
+    border: 1px solid rgba(0, 255, 231, 0.2); /* Border with transparency using Primary Accent */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 231, 0.1); /* Subtle glow shadow */
+    color: var(--text-base-sf);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.sci-fi-theme .result-card:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0 30px var(--primary-sf); /* More intense holo-glow on hover */
+    border-color: var(--primary-sf);
+}
+
+body.sci-fi-theme .result-card p {
+    font-family: var(--font-body-sf);
+    color: var(--text-base-sf);
+}
+
+/* Visualization Container Styles */
+body.sci-fi-theme #heartbeat-gauge-container,
+body.sci-fi-theme #lifespan-progress-container,
+body.sci-fi-theme #animated-age-data-container {
+    border-top: 1px solid var(--secondary-sf); /* Mono-color outline */
+}
+
+/* Sci-Fi Gauge Styles (Hologram Dial) */
+body.sci-fi-theme .retro-gauge { /* Reusing the class from index.html */
+  filter: drop-shadow(0 0 5px var(--primary-sf)); /* Apply glow using Primary Accent */
+  color: var(--primary-sf);
+}
+
+body.sci-fi-theme .retro-gauge .gauge-bg {
+  stroke: var(--text-secondary-sf); /* Neutron Silver for background */
+  opacity: 0.5;
+}
+
+body.sci-fi-theme .retro-gauge .gauge-fill {
+  stroke: var(--primary-sf); /* Primary Accent for active part */
+  filter: drop-shadow(0 0 5px var(--primary-sf)); /* Holo-glow */
+}
+
+body.sci-fi-theme .retro-gauge #needle {
+  stroke: var(--alert-sf); /* Reactor Red for needle */
+  filter: drop-shadow(0 0 3px var(--alert-sf)); /* Glow */
+}
+
+body.sci-fi-theme .retro-gauge .center-dot {
+  fill: var(--alert-sf); /* Reactor Red for center dot */
+  filter: drop-shadow(0 0 3px var(--alert-sf)); /* Glow */
+}
+
+body.sci-fi-theme .retro-gauge .gauge-label {
+  color: var(--text-secondary-sf); /* Neutron Silver */
+  text-shadow: none;
+  font-family: var(--font-body-sf);
+}
+
+body.sci-fi-theme .retro-gauge .gauge-value {
+  color: var(--primary-sf); /* Primary Accent */
+  text-shadow: 0 0 5px var(--primary-sf); /* Holo-glow */
+  font-family: var(--font-heading-sf);
+}
+
+
+/* Lifespan Progress Bar Styles */
+body.sci-fi-theme .lifespan-progress-bar-container {
+    background-color: rgba(170, 0, 255, 0.2); /* Semi-transparent Quantum Purple */
+    box-shadow: 0 0 10px rgba(170, 0, 255, 0.5); /* Quantum Purple glow */
+}
+
+body.sci-fi-theme .lifespan-progress-bar {
+    background: var(--primary-sf); /* Solid Cyan fill */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Animated Age Data Styles */
+body.sci-fi-theme .animated-age-data span.count-up {
+    color: var(--primary-sf); /* Primary Accent */
+    text-shadow: 0 0 5px var(--primary-sf); /* Holo-glow */
+    font-family: var(--font-heading-sf);
+}
+
+/* Download PDF Button Styles */
+body.sci-fi-theme .download-pdf-button {
+    background: transparent;
+    color: var(--primary-sf);
+    border: 2px solid var(--secondary-sf);
+    text-transform: uppercase;
+    box-shadow: 0 0 10px var(--primary-sf);
+    transition: all 0.3s ease-in-out;
+}
+
+body.sci-fi-theme .download-pdf-button:hover {
+    background: var(--secondary-sf);
+    color: var(--background-end-sf);
+    box-shadow: 0 0 20px var(--primary-sf);
+}
+
+/* Theme Toggle Button Styles */
+body.sci-fi-theme .theme-buttons button {
+    background: transparent;
+    color: var(--primary-sf);
+    border: 2px solid var(--secondary-sf);
+    padding: 0.75rem 1.5rem; /* Adjusted to match other buttons */
+    font-family: var(--font-body-sf);
+    text-transform: uppercase;
+    box-shadow: 0 0 10px var(--primary-sf);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0 0.25rem; /* Add some spacing between buttons */
+    border-radius: 0.5rem; /* Explicitly set border-radius */
+}
+
+body.sci-fi-theme .theme-buttons button:hover {
+    background: var(--secondary-sf);
+    color: var(--background-end-sf);
+    box-shadow: 0 0 20px var(--primary-sf); /* Corrected undefined variable */
+}
+
+/* Footer Styles */
+body.sci-fi-theme footer {
+    background-color: rgba(6, 6, 22, 0.5); /* Semi-transparent deep black */
+    color: var(--text-secondary-sf);
+    border-top: 2px solid var(--secondary-sf); /* Mono-color outline */
+}
+
+body.sci-fi-theme footer nav ul li a {
+    color: var(--text-secondary-sf);
+    text-shadow: none;
+}
+
+body.sci-fi-theme footer nav ul li a:hover {
+    color: var(--primary-sf);
+    text-shadow: 0 0 8px var(--primary-sf); /* Holo-glow */
+}
+
+body.sci-fi-theme .version-info {
+    color: var(--text-secondary-sf);
+}
+
+body.sci-fi-theme .version-info a {
+     color: var(--text-secondary-sf);
+     text-decoration: underline;
+     text-shadow: none;
+}
+
+body.sci-fi-theme .version-info a:hover {
+     color: var(--primary-sf);
+     text-shadow: 0 0 8px var(--primary-sf); /* Holo-glow */
+}
+
+/* Ensure overlays are hidden in Sci-Fi theme */
+body.sci-fi-theme .grid-overlay {
+    display: none;
+}
+
+body.sci-fi-theme .crt-overlay::before {
+    display: none;
+}
+
+/* Ensure calendar icon is visible in sci-fi theme */
+body.sci-fi-theme .input-section input[type="date"] {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>');
+}

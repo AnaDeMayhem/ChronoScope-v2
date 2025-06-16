@@ -1,0 +1,1962 @@
+{
+  "meta": {
+    "version": "1.1",
+    "source": "Compiled from various public data sources (WHO, World Bank, Worldometer, Worlddata.info estimates)",
+    "lastUpdated": "2025-05-19"
+  },
+  "countries": {
+    "Afghanistan": {
+      "lifeExpectancy": {
+        "male": 64.5,
+        "female": 67.5
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is crucial for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        },
+        "sanitation": {
+          "message": "Improving sanitation and hygiene contributes to longer lives.",
+          "impactYears": 3
+        },
+        "preventativeCare": {
+          "message": "Regular preventative health measures can improve health.",
+          "impactYears": 2
+        }
+      }
+    },
+    "Albania": {
+      "lifeExpectancy": {
+        "male": 77.9,
+        "female": 81.6
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Algeria": {
+      "lifeExpectancy": {
+        "male": 75.1,
+        "female": 77.9
+      },
+      "nudges": {
+        "diet": {
+          "message": "A balanced diet contributes to a longer life.",
+          "impactYears": 4
+        },
+        "exercise": {
+          "message": "Staying active supports increased lifespan.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Andorra": {
+      "lifeExpectancy": {
+        "male": 82.3,
+        "female": 86.2
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Maintaining a healthy lifestyle contributes to high life expectancy.",
+          "impactYears": 5
+        },
+         "stress": {
+          "message": "Managing stress can positively impact your lifespan.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Angola": {
+      "lifeExpectancy": {
+        "male": 62.5,
+        "female": 65.5
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "sanitation": {
+          "message": "Better sanitation practices are linked to longer lives.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Argentina": {
+      "lifeExpectancy": {
+        "male": 74.8,
+        "female": 79.9
+      },
+      "nudges": {
+        "diet": {
+          "message": "A balanced diet supports a longer life.",
+          "impactYears": 4
+        },
+        "exercise": {
+          "message": "Regular physical activity contributes to increased lifespan.",
+          "impactYears": 3
+        }
+      }
+    },
+     "Australia": {
+      "lifeExpectancy": {
+        "male": 81.1,
+        "female": 85.1
+      },
+      "nudges": {
+        "exercise": {
+          "message": "Regular physical activity is a key factor in higher life expectancy.",
+          "impactYears": 5
+        },
+        "sunProtection": {
+          "message": "Protecting yourself from the sun reduces health risks.",
+          "impactYears": 2
+        },
+         "diet": {
+          "message": "Eating a nutritious diet supports a longer, healthier life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Austria": {
+      "lifeExpectancy": {
+        "male": 79.8,
+        "female": 84.5
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Bangladesh": {
+      "lifeExpectancy": {
+        "male": 73.0,
+        "female": 76.4
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Access to healthcare improves health and longevity.",
+          "impactYears": 3
+        },
+        "sanitation": {
+          "message": "Better sanitation practices are linked to longer lives.",
+          "impactYears": 3
+        },
+         "nutrition": {
+          "message": "Adequate nutrition is vital for increasing life expectancy.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Belarus": {
+      "lifeExpectancy": {
+        "male": 70.5,
+        "female": 80.2
+      },
+      "nudges": {
+        "alcohol": {
+          "message": "Reducing alcohol consumption can significantly increase lifespan.",
+          "impactYears": 5
+        },
+        "smoking": {
+          "message": "Quitting smoking has a major positive impact on life expectancy.",
+          "impactYears": 8
+        }
+      }
+    },
+    "Belgium": {
+      "lifeExpectancy": {
+        "male": 80.1,
+        "female": 84.5
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Benin": {
+      "lifeExpectancy": {
+        "male": 59.3,
+        "female": 62.2
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "sanitation": {
+          "message": "Better sanitation practices are linked to longer lives.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Bolivia": {
+      "lifeExpectancy": {
+        "male": 66.1,
+        "female": 71.1
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Access to healthcare improves health and longevity.",
+          "impactYears": 3
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Bosnia and Herzegovina": {
+      "lifeExpectancy": {
+        "male": 75.2,
+        "female": 80.7
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "smoking": {
+          "message": "Quitting smoking can add significant years to your life expectancy.",
+          "impactYears": 7
+        }
+      }
+    },
+    "Brazil": {
+      "lifeExpectancy": {
+        "male": 72.8,
+        "female": 79.0
+      },
+      "nudges": {
+        "diet": {
+          "message": "A healthy diet can improve your life expectancy.",
+          "impactYears": 4
+        },
+        "exercise": {
+          "message": "Staying active contributes to a longer life.",
+          "impactYears": 3
+        },
+         "smoking": {
+          "message": "Quitting smoking has significant health benefits.",
+          "impactYears": 7
+        }
+      }
+    },
+    "Bulgaria": {
+      "lifeExpectancy": {
+        "male": 71.7,
+        "female": 78.5
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "smoking": {
+          "message": "Quitting smoking can add significant years to your life expectancy.",
+          "impactYears": 7
+        }
+      }
+    },
+    "Burkina Faso": {
+      "lifeExpectancy": {
+        "male": 58.9,
+        "female": 63.2
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Cambodia": {
+      "lifeExpectancy": {
+        "male": 68.0,
+        "female": 73.2
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Access to healthcare improves health and longevity.",
+          "impactYears": 3
+        },
+        "sanitation": {
+          "message": "Better sanitation practices are linked to longer lives.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Cameroon": {
+      "lifeExpectancy": {
+        "male": 61.5,
+        "female": 65.9
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Canada": {
+      "lifeExpectancy": {
+        "male": 79.5,
+        "female": 83.9
+      },
+      "nudges": {
+        "exercise": {
+          "message": "An active lifestyle is linked to increased longevity.",
+          "impactYears": 5
+        },
+        "diet": {
+          "message": "Following healthy eating recommendations can extend lifespan.",
+          "impactYears": 4
+        },
+         "stress": {
+          "message": "Prioritizing mental well-being contributes to a longer life.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Central African Republic": {
+      "lifeExpectancy": {
+        "male": 55.3,
+        "female": 59.3
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is crucial for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Chad": {
+      "lifeExpectancy": {
+        "male": 53.2,
+        "female": 57.0
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Chile": {
+      "lifeExpectancy": {
+        "male": 79.5,
+        "female": 84.3
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "diet": {
+          "message": "A balanced diet contributes to a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "China": {
+      "lifeExpectancy": {
+        "male": 75.2,
+        "female": 80.9
+      },
+      "nudges": {
+        "diet": {
+          "message": "A balanced diet is key to a longer life.",
+          "impactYears": 5
+        },
+        "exercise": {
+          "message": "Staying active can boost your life expectancy.",
+          "impactYears": 4
+        },
+        "smoking": {
+           "message": "Avoiding smoking significantly increases lifespan.",
+           "impactYears": 8
+        }
+      }
+    },
+    "Colombia": {
+      "lifeExpectancy": {
+        "male": 75.8,
+        "female": 80.6
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Congo (Dem. Republic)": {
+      "lifeExpectancy": {
+        "male": 59.8,
+        "female": 64.0
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Costa Rica": {
+      "lifeExpectancy": {
+        "male": 79.1,
+        "female": 83.7
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "socialConnection": {
+          "message": "Strong social ties are linked to longevity.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Croatia": {
+      "lifeExpectancy": {
+        "male": 75.8,
+        "female": 81.9
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Cuba": {
+      "lifeExpectancy": {
+        "male": 76.1,
+        "female": 80.8
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Access to healthcare improves health and longevity.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Cyprus": {
+      "lifeExpectancy": {
+        "male": 79.8,
+        "female": 83.8
+      },
+      "nudges": {
+        "mediterraneanDiet": {
+          "message": "Following a Mediterranean-style diet is associated with increased lifespan.",
+          "impactYears": 6
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Czech Republic": {
+      "lifeExpectancy": {
+        "male": 77.2,
+        "female": 82.8
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "smoking": {
+          "message": "Quitting smoking can add significant years to your life expectancy.",
+          "impactYears": 7
+        }
+      }
+    },
+    "Denmark": {
+      "lifeExpectancy": {
+        "male": 80.2,
+        "female": 84.0
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Dominican Republic": {
+      "lifeExpectancy": {
+        "male": 74.5,
+        "female": 79.3
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "diet": {
+          "message": "A balanced diet contributes to a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Ecuador": {
+      "lifeExpectancy": {
+        "male": 74.7,
+        "female": 80.1
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Egypt": {
+      "lifeExpectancy": {
+        "male": 69.5,
+        "female": 73.8
+      },
+      "nudges": {
+        "diet": {
+          "message": "Adopting healthier eating habits can increase lifespan.",
+          "impactYears": 4
+        },
+        "exercise": {
+          "message": "Regular physical activity supports a longer life.",
+          "impactYears": 3
+        }
+      }
+    },
+    "El Salvador": {
+      "lifeExpectancy": {
+        "male": 72.8,
+        "female": 78.7
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "healthcareAccess": {
+          "message": "Access to healthcare improves health and longevity.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Estonia": {
+      "lifeExpectancy": {
+        "male": 75.3,
+        "female": 83.2
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "smoking": {
+          "message": "Quitting smoking can add significant years to your life expectancy.",
+          "impactYears": 7
+        }
+      }
+    },
+    "Ethiopia": {
+      "lifeExpectancy": {
+        "male": 66.0,
+        "female": 69.9
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Finland": {
+      "lifeExpectancy": {
+        "male": 79.4,
+        "female": 84.8
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "France": {
+      "lifeExpectancy": {
+        "male": 80.1,
+        "female": 85.9
+      },
+      "nudges": {
+        "diet": {
+          "message": "A balanced diet contributes to a long and healthy life.",
+          "impactYears": 5
+        },
+        "socialConnection": {
+          "message": "Maintaining strong social ties is linked to increased longevity.",
+          "impactYears": 3
+        },
+         "exercise": {
+          "message": "Regular physical activity supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Germany": {
+      "lifeExpectancy": {
+        "male": 78.2,
+        "female": 83.0
+      },
+      "nudges": {
+        "exercise": {
+          "message": "Regular physical activity is vital for a long and healthy life.",
+          "impactYears": 5
+        },
+        "alcohol": {
+          "message": "Moderate alcohol intake is recommended for better health outcomes.",
+          "impactYears": 3
+        },
+         "smoking": {
+          "message": "Quitting smoking is one of the best ways to increase lifespan.",
+          "impactYears": 8
+        }
+      }
+    },
+    "Ghana": {
+      "lifeExpectancy": {
+        "male": 63.2,
+        "female": 66.1
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Greece": {
+      "lifeExpectancy": {
+        "male": 79.5,
+        "female": 84.5
+      },
+      "nudges": {
+        "mediterraneanDiet": {
+          "message": "Following a Mediterranean-style diet is associated with increased lifespan.",
+          "impactYears": 6
+        },
+        "lifestyle": {
+          "message": "An active and social lifestyle is key to longevity.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Guatemala": {
+      "lifeExpectancy": {
+        "male": 70.0,
+        "female": 74.0
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Access to healthcare improves health and longevity.",
+          "impactYears": 3
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Guinea": {
+      "lifeExpectancy": {
+        "male": 59.5,
+        "female": 61.9
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "sanitation": {
+          "message": "Better sanitation practices are linked to longer lives.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Haiti": {
+      "lifeExpectancy": {
+        "male": 61.7,
+        "female": 68.3
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is crucial for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Honduras": {
+      "lifeExpectancy": {
+        "male": 71.8,
+        "female": 76.3
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "healthcareAccess": {
+          "message": "Access to healthcare improves health and longevity.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Hungary": {
+      "lifeExpectancy": {
+        "male": 72.5,
+        "female": 79.5
+      },
+      "nudges": {
+        "smoking": {
+          "message": "Quitting smoking can add significant years to your life expectancy.",
+          "impactYears": 7
+        },
+        "alcohol": {
+          "message": "Reducing alcohol consumption can significantly increase lifespan.",
+          "impactYears": 5
+        }
+      }
+    },
+    "Iceland": {
+      "lifeExpectancy": {
+        "male": 81.8,
+        "female": 84.5
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Maintaining a healthy lifestyle contributes to high life expectancy.",
+          "impactYears": 5
+        },
+         "stress": {
+          "message": "Managing stress can positively impact your lifespan.",
+          "impactYears": 3
+        }
+      }
+    },
+    "India": {
+      "lifeExpectancy": {
+        "male": 70.5,
+        "female": 73.6
+      },
+      "nudges": {
+        "diet": {
+          "message": "A healthy diet may add several years to your life expectancy.",
+          "impactYears": 5
+        },
+        "stress": {
+          "message": "Reducing stress can positively impact your lifespan.",
+          "impactYears": 3
+        },
+        "exercise": {
+           "message": "Regular exercise can increase your life expectancy.",
+           "impactYears": 4
+        }
+      }
+    },
+    "Indonesia": {
+      "lifeExpectancy": {
+        "male": 69.0,
+        "female": 73.3
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare can increase life expectancy.",
+          "impactYears": 3
+        },
+        "diet": {
+          "message": "A balanced diet supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Iran": {
+      "lifeExpectancy": {
+        "male": 76.2,
+        "female": 79.9
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "diet": {
+          "message": "A balanced diet contributes to a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Iraq": {
+      "lifeExpectancy": {
+        "male": 71.3,
+        "female": 75.5
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is crucial for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Ireland": {
+      "lifeExpectancy": {
+        "male": 80.6,
+        "female": 84.6
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Israel": {
+      "lifeExpectancy": {
+        "male": 80.7,
+        "female": 84.8
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Maintaining a healthy lifestyle contributes to high life expectancy.",
+          "impactYears": 5
+        },
+         "stress": {
+          "message": "Managing stress can positively impact your lifespan.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Italy": {
+      "lifeExpectancy": {
+        "male": 81.7,
+        "female": 85.8
+      },
+      "nudges": {
+        "mediterraneanDiet": {
+          "message": "Following a Mediterranean-style diet is associated with increased lifespan.",
+          "impactYears": 6
+        },
+        "socialConnection": {
+          "message": "Strong family and community ties contribute to longevity.",
+          "impactYears": 3
+        },
+         "exercise": {
+          "message": "Staying physically active supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Japan": {
+      "lifeExpectancy": {
+        "male": 81.1,
+        "female": 87.1
+      },
+      "nudges": {
+        "diet": {
+          "message": "A traditional healthy diet contributes to longevity.",
+          "impactYears": 6
+        },
+        "exercise": {
+          "message": "Maintaining an active lifestyle supports a longer life.",
+          "impactYears": 4
+        },
+         "stress": {
+          "message": "Managing stress can positively impact your lifespan.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Jordan": {
+      "lifeExpectancy": {
+        "male": 75.9,
+        "female": 80.3
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "diet": {
+          "message": "A balanced diet contributes to a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Kazakhstan": {
+      "lifeExpectancy": {
+        "male": 70.2,
+        "female": 78.4
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "smoking": {
+          "message": "Quitting smoking can add significant years to your life expectancy.",
+          "impactYears": 7
+        }
+      }
+    },
+    "Kenya": {
+      "lifeExpectancy": {
+        "male": 63.7,
+        "female": 67.7
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Kuwait": {
+      "lifeExpectancy": {
+        "male": 80.8,
+        "female": 82.1
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Maintaining a healthy lifestyle contributes to high life expectancy.",
+          "impactYears": 5
+        },
+         "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Lebanon": {
+      "lifeExpectancy": {
+        "male": 75.9,
+        "female": 79.9
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "stress": {
+          "message": "Managing stress can positively impact your lifespan.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Liberia": {
+      "lifeExpectancy": {
+        "male": 60.9,
+        "female": 63.4
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "sanitation": {
+          "message": "Better sanitation practices are linked to longer lives.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Libya": {
+      "lifeExpectancy": {
+        "male": 72.8,
+        "female": 77.0
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Access to healthcare improves health and longevity.",
+          "impactYears": 3
+        },
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        }
+      }
+    },
+    "Lithuania": {
+      "lifeExpectancy": {
+        "male": 71.6,
+        "female": 80.6
+      },
+      "nudges": {
+        "alcohol": {
+          "message": "Reducing alcohol consumption can significantly increase lifespan.",
+          "impactYears": 5
+        },
+        "smoking": {
+          "message": "Quitting smoking has a major positive impact on life expectancy.",
+          "impactYears": 8
+        }
+      }
+    },
+    "Luxembourg": {
+      "lifeExpectancy": {
+        "male": 80.8,
+        "female": 83.9
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Maintaining a healthy lifestyle contributes to high life expectancy.",
+          "impactYears": 5
+        },
+         "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Malaysia": {
+      "lifeExpectancy": {
+        "male": 74.5,
+        "female": 79.5
+      },
+      "nudges": {
+        "diet": {
+          "message": "A balanced diet contributes to a longer life.",
+          "impactYears": 4
+        },
+        "exercise": {
+          "message": "Staying active supports increased lifespan.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Mali": {
+      "lifeExpectancy": {
+        "male": 59.0,
+        "female": 61.9
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Malta": {
+      "lifeExpectancy": {
+        "male": 81.5,
+        "female": 85.4
+      },
+      "nudges": {
+        "mediterraneanDiet": {
+          "message": "Following a Mediterranean-style diet is associated with increased lifespan.",
+          "impactYears": 6
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Mexico": {
+      "lifeExpectancy": {
+        "male": 72.2,
+        "female": 77.8
+      },
+      "nudges": {
+        "diet": {
+          "message": "Adopting healthier eating habits can increase lifespan.",
+          "impactYears": 4
+        },
+        "exercise": {
+          "message": "Regular physical activity supports a longer life.",
+          "impactYears": 3
+        },
+         "stress": {
+          "message": "Managing stress is important for long-term health.",
+          "impactYears": 2
+        }
+      }
+    },
+    "Moldova": {
+      "lifeExpectancy": {
+        "male": 69.3,
+        "female": 77.3
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "alcohol": {
+          "message": "Reducing alcohol consumption can significantly increase lifespan.",
+          "impactYears": 5
+        }
+      }
+    },
+    "Monaco": {
+      "lifeExpectancy": {
+        "male": 84.6,
+        "female": 88.6
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Maintaining a healthy lifestyle contributes to the world's highest life expectancy.",
+          "impactYears": 5
+        },
+         "healthcareAccess": {
+          "message": "Access to excellent healthcare supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Montenegro": {
+      "lifeExpectancy": {
+        "male": 73.9,
+        "female": 80.5
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Morocco": {
+      "lifeExpectancy": {
+        "male": 73.5,
+        "female": 77.9
+      },
+      "nudges": {
+        "diet": {
+          "message": "A balanced diet contributes to a longer life.",
+          "impactYears": 4
+        },
+        "exercise": {
+          "message": "Staying active supports increased lifespan.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Mozambique": {
+      "lifeExpectancy": {
+        "male": 60.7,
+        "female": 64.7
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Nepal": {
+      "lifeExpectancy": {
+        "male": 68.8,
+        "female": 71.8
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Access to healthcare improves health and longevity.",
+          "impactYears": 3
+        },
+        "sanitation": {
+          "message": "Better sanitation practices are linked to longer lives.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Netherlands": {
+      "lifeExpectancy": {
+        "male": 80.7,
+        "female": 83.8
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "New Zealand": {
+      "lifeExpectancy": {
+        "male": 80.6,
+        "female": 83.9
+      },
+      "nudges": {
+        "exercise": {
+          "message": "An active lifestyle is linked to increased longevity.",
+          "impactYears": 5
+        },
+        "diet": {
+          "message": "Following healthy eating recommendations can extend lifespan.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Niger": {
+      "lifeExpectancy": {
+        "male": 60.3,
+        "female": 62.1
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Nigeria": {
+      "lifeExpectancy": {
+        "male": 54.2,
+        "female": 54.7
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Accessing regular healthcare check-ups can improve health outcomes.",
+          "impactYears": 3
+        },
+        "sanitation": {
+          "message": "Improving sanitation practices contributes to better health and longevity.",
+          "impactYears": 3
+        },
+         "nutrition": {
+          "message": "Ensuring adequate nutrition is vital for increasing life expectancy.",
+          "impactYears": 4
+        }
+      }
+    },
+    "North Macedonia": {
+      "lifeExpectancy": {
+        "male": 75.3,
+        "female": 79.7
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "smoking": {
+          "message": "Quitting smoking can add significant years to your life expectancy.",
+          "impactYears": 7
+        }
+      }
+    },
+    "Norway": {
+      "lifeExpectancy": {
+        "male": 81.9,
+        "female": 85.0
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Maintaining a healthy lifestyle contributes to high life expectancy.",
+          "impactYears": 5
+        },
+         "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Oman": {
+      "lifeExpectancy": {
+        "male": 78.7,
+        "female": 82.0
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "diet": {
+          "message": "A balanced diet contributes to a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Pakistan": {
+      "lifeExpectancy": {
+        "male": 65.3,
+        "female": 70.2
+      },
+      "nudges": {
+        "smoking": {
+          "message": "Quitting smoking can add significant years to your life expectancy.",
+          "impactYears": 7
+        },
+        "exercise": {
+          "message": "Regular exercise can increase your life expectancy.",
+          "impactYears": 4
+        },
+        "diet": {
+          "message": "A healthy diet may add several years to your life expectancy.",
+          "impactYears": 5
+        }
+      }
+    },
+    "Panama": {
+      "lifeExpectancy": {
+        "male": 76.9,
+        "female": 82.7
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Paraguay": {
+      "lifeExpectancy": {
+        "male": 71.7,
+        "female": 76.3
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "diet": {
+          "message": "A balanced diet contributes to a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Peru": {
+      "lifeExpectancy": {
+        "male": 75.6,
+        "female": 80.3
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Philippines": {
+      "lifeExpectancy": {
+        "male": 66.9,
+        "female": 72.8
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Access to healthcare improves health and longevity.",
+          "impactYears": 3
+        },
+        "diet": {
+          "message": "A balanced diet supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Poland": {
+      "lifeExpectancy": {
+        "male": 75.1,
+        "female": 82.5
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "smoking": {
+          "message": "Quitting smoking can add significant years to your life expectancy.",
+          "impactYears": 7
+        }
+      }
+    },
+    "Portugal": {
+      "lifeExpectancy": {
+        "male": 79.7,
+        "female": 85.3
+      },
+      "nudges": {
+        "mediterraneanDiet": {
+          "message": "Following a Mediterranean-style diet is associated with increased lifespan.",
+          "impactYears": 6
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Qatar": {
+      "lifeExpectancy": {
+        "male": 81.8,
+        "female": 83.5
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Maintaining a healthy lifestyle contributes to high life expectancy.",
+          "impactYears": 5
+        },
+         "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Romania": {
+      "lifeExpectancy": {
+        "male": 72.7,
+        "female": 79.8
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "smoking": {
+          "message": "Quitting smoking can add significant years to your life expectancy.",
+          "impactYears": 7
+        }
+      }
+    },
+    "Russia": {
+      "lifeExpectancy": {
+        "male": 68.0,
+        "female": 78.7
+      },
+      "nudges": {
+        "alcohol": {
+          "message": "Reducing alcohol consumption can significantly increase lifespan.",
+          "impactYears": 5
+        },
+        "smoking": {
+          "message": "Quitting smoking has a major positive impact on life expectancy.",
+          "impactYears": 8
+        },
+         "diet": {
+          "message": "Improving dietary habits supports a longer life.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Saudi Arabia": {
+      "lifeExpectancy": {
+        "male": 77.3,
+        "female": 81.3
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "diet": {
+          "message": "A balanced diet contributes to a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Serbia": {
+      "lifeExpectancy": {
+        "male": 73.7,
+        "female": 80.2
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "smoking": {
+          "message": "Quitting smoking can add significant years to your life expectancy.",
+          "impactYears": 7
+        }
+      }
+    },
+    "Sierra Leone": {
+      "lifeExpectancy": {
+        "male": 60.1,
+        "female": 63.5
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "sanitation": {
+          "message": "Better sanitation practices are linked to longer lives.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Singapore": {
+      "lifeExpectancy": {
+        "male": 81.4,
+        "female": 86.4
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Maintaining a healthy lifestyle contributes to high life expectancy.",
+          "impactYears": 5
+        },
+         "healthcareAccess": {
+          "message": "Access to excellent healthcare supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Slovakia": {
+      "lifeExpectancy": {
+        "male": 75.2,
+        "female": 81.7
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "smoking": {
+          "message": "Quitting smoking can add significant years to your life expectancy.",
+          "impactYears": 7
+        }
+      }
+    },
+    "Slovenia": {
+      "lifeExpectancy": {
+        "male": 79.1,
+        "female": 84.5
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Somalia": {
+      "lifeExpectancy": {
+        "male": 56.4,
+        "female": 61.4
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is crucial for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "South Africa": {
+      "lifeExpectancy": {
+        "male": 62.6,
+        "female": 69.6
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Regular health screenings are important for early detection and better outcomes.",
+          "impactYears": 3
+        },
+        "healthyLifestyle": {
+          "message": "Adopting a generally healthy lifestyle can significantly increase lifespan.",
+          "impactYears": 5
+        },
+         "stress": {
+          "message": "Managing stress is crucial for long-term health.",
+          "impactYears": 2
+        }
+      }
+    },
+    "South Korea": {
+      "lifeExpectancy": {
+        "male": 80.6,
+        "female": 86.4
+      },
+      "nudges": {
+        "diet": {
+          "message": "A healthy diet contributes to high life expectancy.",
+          "impactYears": 5
+        },
+        "healthcare": {
+          "message": "Access to quality healthcare supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Spain": {
+      "lifeExpectancy": {
+        "male": 81.2,
+        "female": 86.7
+      },
+      "nudges": {
+        "mediterraneanDiet": {
+          "message": "Embracing the Mediterranean diet can significantly boost life expectancy.",
+          "impactYears": 6
+        },
+        "lifestyle": {
+          "message": "An active and social lifestyle is key to longevity.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Sri Lanka": {
+      "lifeExpectancy": {
+        "male": 74.5,
+        "female": 80.8
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Access to healthcare improves health and longevity.",
+          "impactYears": 3
+        },
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        }
+      }
+    },
+    "Sudan": {
+      "lifeExpectancy": {
+        "male": 63.3,
+        "female": 69.6
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is crucial for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "sanitation": {
+          "message": "Better sanitation practices are linked to longer lives.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Sweden": {
+      "lifeExpectancy": {
+        "male": 81.7,
+        "female": 85.0
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Maintaining a healthy lifestyle contributes to high life expectancy.",
+          "impactYears": 5
+        },
+         "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Switzerland": {
+      "lifeExpectancy": {
+        "male": 82.2,
+        "female": 85.9
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Maintaining a healthy lifestyle contributes to high life expectancy.",
+          "impactYears": 5
+        },
+         "healthcareAccess": {
+          "message": "Access to excellent healthcare supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Thailand": {
+      "lifeExpectancy": {
+        "male": 72.6,
+        "female": 81.0
+      },
+      "nudges": {
+        "diet": {
+          "message": "A balanced diet contributes to a longer life.",
+          "impactYears": 4
+        },
+        "exercise": {
+          "message": "Staying active supports increased lifespan.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Togo": {
+      "lifeExpectancy": {
+        "male": 62.5,
+        "female": 62.9
+      },
+      "nudges": {
+        "healthcareAccess": {
+          "message": "Improving access to healthcare is vital for increasing life expectancy.",
+          "impactYears": 4
+        },
+        "nutrition": {
+          "message": "Ensuring adequate nutrition supports better health outcomes.",
+          "impactYears": 3
+        }
+      }
+    },
+    "Turkey": {
+      "lifeExpectancy": {
+        "male": 74.6,
+        "female": 80.3
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "diet": {
+          "message": "A balanced diet contributes to a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Ukraine": {
+      "lifeExpectancy": {
+        "male": 66.9,
+        "female": 80.2
+      },
+      "nudges": {
+        "alcohol": {
+          "message": "Reducing alcohol consumption can significantly increase lifespan.",
+          "impactYears": 5
+        },
+        "smoking": {
+          "message": "Quitting smoking has a major positive impact on life expectancy.",
+          "impactYears": 8
+        }
+      }
+    },
+    "United Arab Emirates": {
+      "lifeExpectancy": {
+        "male": 82.2,
+        "female": 84.3
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Maintaining a healthy lifestyle contributes to high life expectancy.",
+          "impactYears": 5
+        },
+         "exercise": {
+          "message": "Regular exercise supports a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "United Kingdom": {
+      "lifeExpectancy": {
+        "male": 79.4,
+        "female": 83.2
+      },
+      "nudges": {
+        "exercise": {
+          "message": "Meeting physical activity guidelines can add years to your life.",
+          "impactYears": 5
+        },
+        "diet": {
+          "message": "Eating a balanced diet supports long-term health.",
+          "impactYears": 4
+        },
+         "smoking": {
+          "message": "Stopping smoking significantly improves life expectancy.",
+          "impactYears": 8
+        }
+      }
+    },
+    "United States": {
+      "lifeExpectancy": {
+        "male": 75.8,
+        "female": 81.1
+      },
+      "nudges": {
+        "alcohol": {
+          "message": "Limiting alcohol consumption can increase lifespan.",
+          "impactYears": 3
+        },
+        "sleep": {
+          "message": "Getting enough sleep improves your life expectancy.",
+          "impactYears": 3
+        },
+         "smoking": {
+          "message": "Quitting smoking can add significant years to your life expectancy.",
+          "impactYears": 8
+        },
+        "exercise": {
+           "message": "Regular exercise can increase your life expectancy.",
+           "impactYears": 5
+        }
+      }
+    },
+    "Uruguay": {
+      "lifeExpectancy": {
+        "male": 74.4,
+        "female": 82.0
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "diet": {
+          "message": "A balanced diet contributes to a longer life.",
+          "impactYears": 4
+        }
+      }
+    },
+    "Vietnam": {
+      "lifeExpectancy": {
+        "male": 69.9,
+        "female": 79.3
+      },
+      "nudges": {
+        "healthyLifestyle": {
+          "message": "Adopting a healthy lifestyle can add years to your life.",
+          "impactYears": 5
+        },
+        "smoking": {
+          "message": "Quitting smoking can add significant years to your life expectancy.",
+          "impactYears": 7
+        }
+      }
+    }
+  },
+  "consent": {
+    "required": true,
+    "message": "Please consent to see your personalized life expectancy projections. Data is based on general population statistics and health estimates from various sources and should be considered illustrative."
+  },
+  "defaults": {
+    "globalAverage": 72.6,
+    "globalNudges": {
+      "healthyLifestyle": {
+        "message": "Adopting a generally healthy lifestyle, including diet, exercise, and avoiding smoking, can add several years to your life.",
+        "impactYears": 7
+      },
+       "preventativeCare": {
+        "message": "Regular preventative healthcare and screenings can improve health outcomes and lifespan.",
+        "impactYears": 3
+       }
+    }
+  }
+}

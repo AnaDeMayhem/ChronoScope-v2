@@ -1,0 +1,1134 @@
+/* Minimalist Glass UI Design */
+
+/* Color Palette */
+:root {
+    --bg-color: #fff;
+    --text-color-main: #000;
+    --calendar-icon-color: #000; /* Default calendar icon color */
+    --text-color-secondary: #666;
+    --button-color: #000;
+    --highlight-color: #f0f0f0;
+    --border-color: #ccc;
+}
+
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Use Inter for body text */
+    background-color: #e0e0e0; /* Subtle light background */
+    color: var(--text-color-main);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif; /* Use Orbitron for logo */
+    font-size: 3.5rem;
+    color: var(--text-color-main);
+    margin: 0;
+}
+
+h1, h2, .title {
+    font-family: 'Orbitron', sans-serif; /* Use Orbitron for headings */
+    font-weight: 700; /* Bold for headings */
+    color: var(--text-color-main);
+}
+
+h2 {
+    font-size: 1.8rem; /* Slightly larger heading */
+    margin-bottom: 0.8rem; /* Increased margin */
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.4rem; /* Increased padding */
+}
+
+.visualization-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.17rem; /* Set font size as requested */
+    margin-bottom: 0.8rem; /* Increased margin */
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.4rem; /* Increased padding */
+}
+
+.title {
+    font-size: 3.5rem; /* Slightly larger title */
+    margin-bottom: 0.8rem; /* Increased margin */
+}
+
+.subtitle {
+    font-family: 'Inter', sans-serif; /* Use Inter for subtitle */
+    font-size: 1.2rem; /* Slightly smaller subtitle */
+    color: var(--text-color-secondary);
+    margin: 0;
+}
+
+#theme-toggle {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem; /* Adjusted padding */
+    border-radius: 0.5rem;
+    font-size: 1rem; /* Adjusted font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Vertically center items */
+    gap: 0.5rem; /* Add space between items */
+    margin: 1rem auto; /* Center the button and add margin */
+}
+
+.theme-buttons button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem; /* Adjusted padding */
+    border-radius: 0.5rem;
+    font-size: 1rem; /* Adjusted font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+    margin: 0.5rem; /* Add margin between buttons */
+}
+
+.theme-buttons button:hover {
+    background-color: var(--text-color-main);
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
+}
+
+/* Theme Button Styles based on active theme */
+body.dark-mode .theme-buttons button {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0.2rem 0.4rem rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode .theme-buttons button:hover {
+    background-color: #ccc;
+    box-shadow: 0 0.3rem 0.6rem rgba(255, 255, 255, 0.4);
+}
+
+body.retro-theme .theme-buttons button {
+    background-color: var(--bg-color);
+    color: var(--button-color);
+    border: 2px solid var(--button-color);
+    box-shadow: 0 0 8px var(--button-color);
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+}
+
+body.retro-theme .theme-buttons button:hover {
+    background-color: var(--button-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 12px var(--button-color), 0 0 24px var(--button-color);
+}
+
+.theme-sci-fi body .theme-buttons button {
+    background: transparent;
+    color: var(--primary-sf);
+    border: 2px solid var(--secondary-sf);
+    padding: 0.75rem 1.5rem; /* Adjusted to match other buttons */
+    font-family: var(--font-body-sf);
+    text-transform: uppercase;
+    box-shadow: 0 0 10px var(--primary-sf);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.theme-sci-fi body .theme-buttons button:hover {
+    background: var(--secondary-sf);
+    color: var(--background-end-sf);
+    box-shadow: 0 0 20px var(--primary-sf); /* Using primary-sf for glow as accent-sf is undefined */
+}
+
+/* Style for the active theme button */
+body.dark-mode .theme-buttons button#theme-dark,
+body.retro-theme .theme-buttons button#theme-retro,
+.theme-sci-fi body .theme-buttons button#theme-sci-fi,
+body:not(.dark-mode):not(.retro-theme):not(.theme-sci-fi) .theme-buttons button#theme-default {
+    /* Add a distinct style for the active button */
+    outline: 2px solid var(--primary-accent); /* Example: Add an outline */
+    box-shadow: 0 0 10px var(--primary-accent); /* Example: Add a stronger glow */
+    /* You might want to adjust colors or background as well */
+    font-weight: bold;
+}
+
+body.dark-mode .theme-buttons button#theme-dark {
+    outline-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+body.retro-theme .theme-buttons button#theme-retro {
+    outline-color: var(--highlight-glow);
+    box-shadow: 0 0 10px var(--highlight-glow);
+}
+
+.theme-sci-fi body .theme-buttons button#theme-sci-fi {
+    outline-color: var(--button-glow-sf);
+    box-shadow: 0 0 10px var(--button-glow-sf);
+}
+
+
+/* Input Section Styles */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: var(--highlight-color);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.input-section label {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--text-color-main);
+}
+
+.input-section input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0; /* Make the default picker transparent */
+    width: 100%; /* Make the clickable area cover the input */
+    height: 100%;
+    cursor: pointer; /* Indicate it's clickable */
+    position: absolute; /* Position over the input */
+    top: 0;
+    left: 0;
+}
+
+.input-section input[type="date"]::-moz-calendar-picker {
+    opacity: 0; /* Make the default picker transparent */
+    width: 100%; /* Make the clickable area cover the input */
+    height: 100%;
+    cursor: pointer; /* Indicate it's clickable */
+    position: absolute; /* Position over the input */
+    top: 0;
+    left: 0;
+}
+
+.input-section input[type="date"] {
+    /* Add custom calendar icon */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1.2em; /* Adjust size as needed */
+    padding-right: 2.5rem; /* Make space for the icon */
+
+    width: 200px;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    position: relative; /* Needed for z-index */
+    z-index: 1; /* Ensure the date picker is below the button */
+}
+
+.input-section input[type="time"] {
+    width: 200px;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.input-section button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+    position: relative; /* Needed for z-index */
+    z-index: 10; /* Ensure the button is above the date picker */
+}
+
+.input-section button:hover {
+    background-color: var(--text-color-main);
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
+}
+
+/* Results Section Styles */
+.results-section {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Lifespan Comparison Chart Styles */
+.lifespan-chart-container {
+    width: 100%;
+    max-width: 400px; /* Limit chart width */
+    margin: 1rem auto; /* Center the chart */
+    text-align: left; /* Align text within the chart container */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.chart-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    width: 100%; /* Ensure the flex container takes full width */
+}
+
+.bar-label {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    min-width: 150px; /* Give labels a fixed width */
+    flex-shrink: 0; /* Prevent label from shrinking */
+}
+
+.bar {
+    height: 20px;
+    background-color: #007bff; /* Default bar color */
+    transition: width 1.5s ease-in-out; /* Animate bar width */
+    border-radius: 4px;
+    flex-grow: 0; /* Prevent bar from growing */
+    flex-shrink: 0; /* Prevent bar from shrinking */
+    flex-basis: auto; /* Base size on width */
+}
+
+/* Adjust bar color for themes */
+body.dark-mode .lifespan-chart-container .bar {
+    background-color: #00fff7; /* Sci-fi color for dark mode */
+}
+
+body.retro-theme .lifespan-chart-container .bar {
+    background-color: var(--highlight-glow); /* Cyan Aura for retro */
+}
+
+body.sci-fi-theme .lifespan-chart-container .bar {
+    background-color: var(--primary-sf); /* Plasma Blue for sci-fi */
+}
+
+.result-card {
+    background-color: var(--bg-color);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.result-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Add border-color to transition */
+    border: 1px solid rgba(204, 204, 204, 0.5); /* Subtle border */
+    backdrop-filter: blur(5px); /* Glass effect */
+}
+
+.result-card:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    border-color: rgba(150, 150, 255, 0.8); /* Subtle glow effect on hover */
+}
+
+/* Style for paragraph text within result cards */
+.result-card p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* Visualization Container Styles */
+#heartbeat-gauge-container,
+#lifespan-progress-container,
+#animated-age-data-container {
+    margin-top: 1.5rem; /* Increased margin */
+    padding-top: 1.5rem; /* Increased padding */
+    border-top: 1px solid var(--border-color);
+    text-align: center; /* Center the content within the containers */
+}
+
+/* Retro Gauge Styles */
+.retro-gauge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', sans-serif; /* Changed font to Inter for consistency */
+  color: #ff66c4;
+  margin: 30px 0;
+}
+
+.gauge {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.gauge-bg {
+  fill: none;
+  stroke: #333;
+  stroke-width: 15;
+  opacity: 0.2;
+}
+
+.gauge-fill {
+  fill: none;
+  stroke: url(#gaugeGradient);
+  stroke-width: 15;
+  stroke-dasharray: 283; /* 180deg arc length */
+  stroke-dashoffset: 283;
+  transition: stroke-dashoffset 1.5s ease-out;
+  filter: drop-shadow(0 0 5px #ff66c4);
+}
+
+#needle {
+  stroke: #00fff7;
+  stroke-width: 3;
+  transform-origin: 100px 100px;
+  transform: rotate(0deg);
+  transition: transform 1.5s ease-out;
+  filter: drop-shadow(0 0 3px #00fff7); /* Add glow to needle */
+}
+
+.center-dot {
+  fill: #ff66c4;
+  filter: drop-shadow(0 0 3px #ff66c4); /* Add glow to center dot */
+}
+
+.gauge-label {
+  margin-top: 15px;
+  text-align: center;
+  color: #ff66c4; /* Ensure label color is correct */
+  text-shadow: 0 0 5px #ff66c4; /* Add glow to label */
+  font-family: 'Inter', sans-serif; /* Set font to Inter for consistency */
+  font-weight: 400; /* Set font weight to normal for consistency */
+}
+
+.gauge-value {
+  font-size: 24px;
+  color: #000; /* Changed color to black */
+  margin-top: 5px;
+  text-shadow: none; /* Removed text shadow for better visibility */
+  font-family: 'Inter', sans-serif; /* Set font to Inter for consistency */
+}
+
+/* Heartbeat Gauge Styles (Remove old styles) */
+/*
+.heartbeat-gauge {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.heartbeat-gauge defs linearGradient stop:first-child {
+    stop-color: #9b59b6;
+}
+
+.heartbeat-gauge defs linearGradient stop:last-child {
+    stop-color: #e91e63;
+}
+
+.gauge-needle {
+    transform-box: fill-box;
+    transform-origin: 100px 100px;
+}
+*/
+
+/* Lifespan Progress Bar Styles */
+.lifespan-progress-bar-container {
+    width: 90%; /* Slightly wider */
+    margin: 1.5rem auto; /* Center the container with more margin */
+    background-color: #333; /* Darker background */
+    border-radius: 8px; /* More rounded corners */
+    overflow: hidden; /* Ensure the inner bar stays within bounds */
+    box-shadow: 0 0 10px rgba(150, 150, 255, 0.5); /* Subtle glow */
+}
+
+.lifespan-progress-bar {
+    height: 25px; /* Slightly taller */
+    background: linear-gradient(90deg, #9b59b6, #e91e63); /* Gradient fill */
+    width: 0%; /* Initial width for animation */
+    transition: width 2s ease-in-out; /* Animation */
+    text-align: center;
+    line-height: 25px; /* Center text vertically */
+    color: white;
+    font-size: 1rem; /* Slightly larger font */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+/* Animated Age Data Styles */
+.animated-age-data p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.animated-age-data span.count-up {
+    font-weight: bold;
+    color: var(--text-color-main); /* Use main text color */
+    font-family: 'Inter', sans-serif; /* Set font to Inter for consistency */
+}
+
+
+/* Extras Section Styles */
+.extras-section {
+    margin-bottom: 2rem;
+}
+
+/* Download PDF Button Styles */
+.download-pdf-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--button-color);
+    color: white;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem; /* Added bottom margin */
+}
+
+.download-pdf-button:hover {
+    filter: brightness(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .results-section {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer Responsive Styles */
+    footer nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    footer nav ul li {
+        padding: 0.5rem 0; /* Add vertical padding, remove horizontal */
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--bg-color);
+    color: var(--text-color-main);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+footer nav ul li {
+    padding: 0 0.5rem; /* Reduce horizontal padding slightly */
+}
+
+footer nav ul li a {
+    color: var(--text-color-main);
+    text-decoration: none;
+}
+
+/* Larger screens */
+@media (min-width: 992px) {
+    #historical-facts {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: #000 !important; /* Set background to solid black */
+  color: #fff;
+}
+
+body.dark-mode .logo {
+    color: #fff; /* Ensure logo is white in dark mode */
+}
+
+body.dark-mode .input-section button {
+    color: #000; /* Ensure button text is black in dark mode */
+    background-color: #fff; /* Ensure button background is white in dark mode */
+}
+
+body.dark-mode .download-pdf-button {
+    color: #000; /* Ensure download button text is black in dark mode */
+    background-color: #fff; /* Ensure download button background is white in dark mode */
+}
+
+body.dark-mode footer {
+    background-color: #000; /* Ensure footer is black in dark mode */
+    color: #fff; /* Ensure footer text is white in dark mode */
+}
+
+body.dark-mode footer {
+    background-color: #000; /* Ensure footer is black in dark mode */
+}
+
+body.dark-mode footer nav ul li a {
+    color: #fff; /* Ensure footer links are white in dark mode */
+}
+
+body.dark-mode .input-section {
+    background-color: #333; /* Darken the input section */
+    color: #fff;
+}
+
+body.dark-mode .input-section label {
+    color: #fff; /* Ensure labels are visible in dark mode */
+}
+
+body.dark-mode .result-card {
+    background-color: rgba(50, 50, 50, 0.8); /* Darker semi-transparent background */
+    border-color: rgba(80, 80, 80, 0.5); /* Darker subtle border */
+    color: #e0e0e0; /* Lighter text color */
+}
+
+body.dark-mode .result-card h2 {
+    color: #fff; /* White headings in dark mode */
+    border-bottom-color: rgba(80, 80, 80, 0.5); /* Darker border */
+}
+
+body.dark-mode .result-card p {
+    color: #e0e0e0; /* Lighter paragraph text */
+}
+
+body.dark-mode .retro-gauge .gauge-bg {
+    stroke: #666; /* Lighter stroke for gauge background */
+}
+
+body.dark-mode .retro-gauge .gauge-label {
+    color: #00fff7; /* Sci-fi color for gauge label */
+    text-shadow: 0 0 5px #00fff7; /* Sci-fi glow */
+}
+
+body.dark-mode .retro-gauge .gauge-value {
+    color: #fff; /* White value in dark mode */
+}
+
+body.dark-mode .retro-gauge .center-dot {
+    fill: #00fff7; /* Sci-fi color for center dot */
+    filter: drop-shadow(0 0 3px #00fff7); /* Sci-fi glow */
+}
+
+body.dark-mode .lifespan-progress-bar-container {
+    background-color: #666; /* Lighter background for progress bar container */
+    box-shadow: 0 0 10px rgba(0, 255, 247, 0.5); /* Sci-fi glow */
+}
+
+body.dark-mode .animated-age-data span.count-up {
+    color: #00fff7; /* Sci-fi color for count-up numbers */
+}
+
+body.dark-mode a {
+    color: #00fff7; /* Sci-fi color for links */
+}
+
+body.dark-mode #theme-toggle .light-mode-icon {
+    display: none; /* Hide sun icon in dark mode */
+}
+
+body.dark-mode #theme-toggle .dark-mode-icon {
+    display: inline; /* Show moon icon in dark mode */
+}
+
+/* --- Retro Theme Styles --- */
+body.retro-theme {
+    /* Color Palette */
+    --bg-color: #0a0f1f;
+    --text-color-main: #dcdcdc;
+    --text-color-secondary: #00ff99; /* Muted UI */
+    --button-color: #00f0ff; /* Electric Blue */
+    --highlight-color: #0e1628; /* Darker shade for input section */
+    --border-color: #c770ff; /* Neon Purple */
+    --primary-accent: #c770ff; /* Neon Purple */
+    --secondary-accent: #00f0ff; /* Electric Blue */
+    --tertiary-accent: #ff2e9a; /* Synthwave Pink */
+    --highlight-glow: #2bffe0; /* Cyan Aura */
+
+    /* Background / Scene */
+    background: radial-gradient(ellipse at bottom, #0a0f1f 0%, #05060b 100%);
+    color: var(--text-color-main);
+    font-family: 'Orbitron', 'VT323', 'Share Tech Mono', monospace;
+}
+
+body.retro-theme .grid-overlay {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path d="M 0 0 L 0 100 M 0 0 L 100 0" stroke="%232bffe0" stroke-width="0.5"/></svg>');
+    opacity: 0.04;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+/* UI Components */
+body.retro-theme .input-section button,
+body.retro-theme .download-pdf-button {
+    background-color: var(--bg-color);
+    color: var(--button-color);
+    border: 2px solid var(--button-color);
+    padding: 10px 20px;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 8px var(--button-color);
+    transition: all 0.3s ease-in-out;
+}
+
+body.retro-theme .input-section button:hover,
+body.retro-theme .download-pdf-button:hover {
+    background-color: var(--button-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 12px var(--button-color), 0 0 24px var(--button-color);
+}
+
+body.retro-theme .result-card {
+    border: 2px solid var(--primary-accent);
+    border-radius: 12px;
+    background: linear-gradient(145deg, #0e1628, #0a0f1f);
+    box-shadow: 0 0 15px rgba(199, 112, 255, 0.4); /* Using rgba for transparency */
+    padding: 1.5rem;
+    margin: 1rem;
+    color: var(--text-color-main);
+    font-family: 'Share Tech Mono', monospace;
+    backdrop-filter: none; /* Remove glass effect */
+}
+
+body.retro-theme .result-card:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0 20px rgba(199, 112, 255, 0.6); /* Increased glow on hover */
+    border-color: var(--primary-accent);
+}
+
+/* Retro Gauges / Dials (SVG Based) */
+body.retro-theme .retro-gauge {
+  color: var(--tertiary-accent); /* Synthwave Pink */
+  font-family: 'Share Tech Mono', monospace;
+}
+
+body.retro-theme .retro-gauge .gauge-bg {
+  stroke: var(--text-color-secondary); /* Old Monitor Green */
+  opacity: 0.5;
+}
+
+body.retro-theme .retro-gauge .gauge-fill {
+  stroke: url(#gaugeGradientRetro); /* Use a new gradient for retro theme */
+  filter: drop-shadow(0 0 5px var(--tertiary-accent)); /* Synthwave Pink glow */
+}
+
+body.retro-theme .retro-gauge #needle {
+  stroke: var(--highlight-glow); /* Cyan Aura */
+  filter: drop_shadow(0 0 3px var(--highlight-glow)); /* Cyan Aura glow */
+}
+
+body.retro-theme .retro-gauge .center-dot {
+  fill: var(--tertiary-accent); /* Synthwave Pink */
+  filter: drop-shadow(0 0 3px var(--tertiary-accent)); /* Synthwave Pink glow */
+}
+
+body.retro-theme .retro-gauge .gauge-label {
+  color: var(--tertiary-accent); /* Synthwave Pink */
+  text-shadow: 0 0 5px var(--tertiary-accent); /* Synthwave Pink glow */
+  font-family: 'Share Tech Mono', monospace;
+}
+
+body.retro-theme .retro-gauge .gauge-value {
+  color: var(--highlight-glow); /* Cyan Aura */
+  text-shadow: 0 0 5px var(--highlight-glow); /* Cyan Aura glow */
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Lifespan Progress Bar Styles */
+body.retro-theme .lifespan-progress-bar-container {
+    background-color: #333; /* Dark background */
+    box-shadow: 0 0 10px rgba(199, 112, 255, 0.5); /* Neon Purple glow */
+}
+
+body.retro-theme .lifespan-progress-bar {
+    background: linear-gradient(90deg, var(--primary-accent), var(--tertiary-accent)); /* Neon Purple to Synthwave Pink gradient */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Animated Age Data Styles */
+body.retro-theme .animated-age-data span.count-up {
+    color: var(--highlight-glow); /* Cyan Aura */
+    text-shadow: 0 0 5px var(--highlight-glow); /* Cyan Aura glow */
+}
+
+/* Extras Section Styles */
+body.retro-theme .extras-section {
+    color: var(--text-color-main);
+}
+
+/* Header Styles */
+body.retro-theme header {
+    color: var(--text-color-main);
+}
+
+body.retro-theme .logo {
+    color: var(--highlight-glow); /* Cyan Aura */
+    text-shadow: 0 0 10px var(--highlight-glow); /* Cyan Aura glow */
+}
+
+body.retro-theme .subtitle {
+    color: var(--text-color-secondary); /* Old Monitor Green */
+}
+
+body.retro-theme h1,
+body.retro-theme h2,
+body.retro-theme h3,
+body.retro-theme .title,
+body.retro-theme .visualization-heading {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--secondary-accent); /* Electric Blue */
+    text-shadow: 0 0 8px var(--secondary-accent); /* Electric Blue glow */
+    border-bottom-color: var(--primary-accent); /* Neon Purple */
+}
+
+body.retro-theme .input-section {
+    background-color: var(--highlight-color);
+    color: var(--text-color-main);
+    border: 2px solid var(--primary-accent);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(199, 112, 255, 0.4);
+}
+
+body.retro-theme .input-section label {
+    color: var(--text-color-main);
+}
+
+body.retro-theme .input-section input[type="date"],
+body.retro-theme .input-section input[type="time"] {
+    background-color: #05060b;
+    color: var(--highlight-glow);
+    border: 1px solid var(--secondary-accent);
+    box-shadow: 0 0 5px var(--secondary-accent);
+}
+
+body.retro-theme footer {
+    background-color: #05060b;
+    color: var(--text-color-secondary);
+    border-top: 2px solid var(--primary-accent);
+}
+
+body.retro-theme footer nav ul li a {
+    color: var(--text-color-secondary);
+    text-shadow: 0 0 3px var(--text-color-secondary);
+}
+
+body.retro-theme footer nav ul li a:hover {
+    color: var(--highlight-glow);
+    text-shadow: 0 0 8px var(--highlight-glow);
+}
+
+body.retro-theme .version-info {
+    color: var(--text-color-secondary);
+}
+
+body.retro-theme .version-info a {
+     color: var(--text-color-secondary);
+     text-decoration: underline;
+     text-shadow: none;
+}
+
+body.retro-theme .version-info a:hover {
+     color: var(--highlight-glow);
+     text-shadow: 0 0 8px var(--highlight-glow);
+}
+
+/* Micro-Animations */
+body.retro-theme .glow-text {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px var(--tertiary-accent), 0 0 10px var(--tertiary-accent);
+  }
+  to {
+    text-shadow: 0 0 20px var(--tertiary-accent), 0 0 30px var(--tertiary-accent);
+  }
+}
+
+/* CRT Overlay */
+body.retro-theme .crt-overlay::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(to bottom, rgba(255,255,255,0.02), rgba(255,255,255,0.02) 1px, transparent 1px, transparent 2px);
+  pointer-events: none;
+  z-index: 9999; /* Ensure it's on top */
+  top: 0;
+  left: 0;
+}
+
+/* Add a new gradient for the retro gauge fill */
+body.retro-theme .retro-gauge defs {
+    display: block; /* Ensure defs are displayed */
+}
+
+body.retro-theme .retro-gauge defs #gaugeGradientRetro stop:first-child {
+    stop-color: var(--tertiary-accent); /* Synthwave Pink */
+}
+
+body.retro-theme .retro-gauge defs #gaugeGradientRetro stop:last-child {
+    stop-color: var(--highlight-glow); /* Cyan Aura */
+}
+
+/* Ensure the gauge SVG uses the new gradient */
+body.retro-theme .retro-gauge .gauge-fill {
+    stroke: url(#gaugeGradientRetro);
+}
+
+/* Style for paragraph text within result cards */
+body.retro-theme .result-card p {
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 400;
+    color: var(--text-color-main);
+}
+
+/* Ensure the grid overlay is behind everything */
+body.retro-theme .grid-overlay {
+    z-index: -1;
+}
+
+/* Ensure the CRT overlay is on top */
+body.retro-theme .crt-overlay::before {
+    z-index: 9999;
+}
+
+/* Ensure the main container is above the grid overlay */
+body.retro-theme .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* --- Sci-Fi Theme Styles --- */
+.theme-sci-fi body {
+  /* Color Palette */
+  --bg-color-sf: #0e0e2c; /* Deep Space Black */
+  --primary-accent-sf: #00ffe7; /* Plasma Blue */
+  --secondary-accent-sf: #aa00ff; /* Quantum Purple */
+  --tertiary-accent-sf: #c0c0c0; /* Neutron Silver */
+  --button-glow-sf: #33f3ff; /* Hologram Cyan */
+  --text-base-sf: #e0f7ff; /* Light Plasma Grey */
+  --warning-active-sf: #ff3c41; /* Reactor Red */
+
+  /* Background / Immersion Layer */
+  background: linear-gradient(to bottom, var(--bg-color-sf), #060616);
+  background-image: url('bg/stars-overlay.png'); /* Verify path */
+  background-size: cover;
+  color: var(--text-base-sf); /* Apply base text color */
+  /* Font family will be handled by the font toggles, but ensure a sci-fi fallback */
+  font-family: 'Rajdhani', 'Orbitron', 'Share Tech Mono', monospace;
+}
+
+/* Ensure grid-overlay is hidden in Sci-Fi theme */
+.theme-sci-fi .grid-overlay {
+    display: none;
+}
+
+/* Ensure CRT overlay is hidden in Sci-Fi theme */
+.theme-sci-fi .crt-overlay::before {
+    display: none;
+}
+
+/* Glass & Hologram Effects */
+.theme-sci-fi .panel-sci-fi { /* Adjust selector as needed */
+  background: rgba(255, 255, 255, 0.05); /* Very light transparent white */
+  border: 1px solid rgba(0, 255, 255, 0.2); /* Border with transparency using Primary Accent */
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px); /* Apply the blur effect */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1); /* Subtle glow shadow */
+}
+
+/* Typography */
+.theme-sci-fi body { /* Apply to body or a main text container */
+  font-family: 'Orbitron', 'Rajdhani', monospace;
+  text-transform: uppercase; /* Uppercase text for a tech feel */
+  letter-spacing: 1px; /* Slightly increased letter spacing */
+}
+/* Adjust specific elements if needed, e.g., headings */
+.theme-sci-fi h1, .theme-sci-fi h2 {
+     font-family: 'Orbitron', monospace;
+     color: var(--primary-accent-sf); /* Primary Accent for headings */
+}
+
+/* Animations & FX */
+/* Pulsing Animation */
+.theme-sci-fi .pulse { /* Apply only in Sci-Fi theme */
+  animation: pulse 1.5s infinite ease-in-out;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.5); } /* Start with glow */
+  70% { box-shadow: 0 0 0 10px rgba(0, 255, 255, 0); } /* Expand and fade */
+  100% { box-shadow: 0 0 0 0 rgba(0, 255, 255, 0); } /* Reset */
+}
+
+/* UI Elements */
+/* Sci-Fi Buttons (.button-sci-fi or equivalent) */
+.theme-sci-fi .button-sci-fi { /* Adjust selector as needed */
+  background: transparent;
+  color: var(--primary-accent-sf); /* Primary Accent */
+  border: 2px solid var(--primary-accent-sf); /* Primary Accent border */
+  border-radius: 6px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 0 5px var(--primary-accent-sf), 0 0 10px var(--primary-accent-sf) inset; /* Inner and outer glow */
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.theme-sci-fi .button-sci-fi:hover { /* Adjust selector as needed */
+  background: var(--primary-accent-sf); /* Fill with accent color on hover */
+  color: var(--bg-color-sf); /* Background color for text on hover */
+  box-shadow: 0 0 20px var(--primary-accent-sf); /* More intense glow on hover */
+}
+
+/* Sci-Fi Info Cards (.card-sci-fi or equivalent) */
+.theme-sci-fi .result-card { /* Adjust selector as needed */
+  border: 1px solid #aa00ff66; /* Secondary Accent with transparency */
+  background: rgba(0, 0, 0, 0.25); /* Semi-transparent dark background */
+  border-radius: 12px;
+  padding: 1.5rem; /* Increased padding */
+  backdrop-filter: blur(8px); /* Apply blur */
+  box-shadow: 0 0 15px rgba(170, 0, 255, 0.3); /* Secondary Accent glow */
+  color: var(--text-base-sf); /* Base text color */
+}
+
+/* Sci-Fi Gauge (Hologram Dial) */
+.theme-sci-fi .sci-fi-gauge { /* Adjust selector as needed */
+  filter: drop-shadow(0 0 5px var(--primary-accent-sf)); /* Apply glow using Primary Accent */
+  /* Add other styles for gauge elements (need specific gauge structure) */
+  /* Example for SVG paths/circles: */
+  stroke: var(--primary-accent-sf); /* Primary Accent for active parts */
+  fill: none;
+}
+/* Apply Neutron Silver or a muted color for gauge backgrounds or inactive parts */
+ .theme-sci-fi .sci-fi-gauge .gauge-background { /* Example class */
+     stroke: var(--tertiary-accent-sf); /* Neutron Silver */
+ }
+
+/* Bonus Sci-Fi Effects */
+/* 3D Panel Hover Tilt */
+.theme-sci-fi .tilt { /* Apply only in Sci-Fi theme */
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out;
+}
+.theme-sci-fi .tilt:hover { /* Apply only in Sci-Fi theme */
+  transform: rotateY(5deg) rotateX(5deg); /* Adjust angles as needed */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6); /* Black with opacity */
+    backdrop-filter: blur(5px); /* Blur the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffffff; /* Changed to solid white */
+    color: #000000; /* Changed text color to black */
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Could be more responsive */
+    max-width: 500px; /* Max width */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.modal-content .rounded-xl {
+    margin-bottom: 0; /* Remove bottom margin from the banner inside modal */
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

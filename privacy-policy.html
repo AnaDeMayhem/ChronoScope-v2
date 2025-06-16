@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | ChronoScope</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="theme-retro.css" id="retro-theme-link" disabled>
+  <link rel="stylesheet" href="theme-sci-fi.css" id="sci-fi-theme-link" disabled>
+  <style>
+    /* Color Palette */
+    :root {
+        --bg-color: #fff;
+        --text-color-main: #000;
+        --text-color-secondary: #666;
+        --button-color: #000;
+        --highlight-color: #f0f0f0;
+        --border-color: #ccc;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color-main);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1200px;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    /* Header Styles */
+    header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .logo {
+        font-family: 'Dosis', sans-serif;
+        font-size: 3.5rem;
+        color: var(--text-color-main);
+        margin: 0;
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
+        color: var(--text-color-main);
+        margin-bottom: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html"><h1 class="logo">ChronoScope</h1></a>
+    </header>
+    <h1>Privacy Policy</h1>
+    <p>At ChronoScope (https://ChronoScope.apphive.site), we take your privacy seriously.</p>
+
+    <h2>Information We Collect</h2>
+    <p>We do not collect, store, or share any personal information. This tool is fully client-side and does not transmit any data to our servers or third parties.</p>
+
+    <h2>Cookies and Tracking</h2>
+    <p>We do not use cookies, tracking scripts, or analytics tools.</p>
+
+    <h2>External Links</h2>
+    <p>This website may contain links to external sites. We are not responsible for their content or privacy practices.</p>
+
+    <h2>Contact</h2>
+    <p>If you have any questions, feel free to contact us at <a href="mailto:info@apphive.site">info@apphive.site</a>.</p>
+
+    <p>In the future, we may use Google AdSense to serve ads. These ads may use cookies; please refer to Google’s Privacy & Terms for more info.</p>
+
+    <p>Last updated: April 2025</p>
+  </div>
+  <script>
+    // Apply saved theme on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.body.classList.add(savedTheme);
+        // Also enable the correct theme stylesheet if it's retro or sci-fi
+        if (savedTheme === 'retro-theme') {
+          const retroLink = document.getElementById('retro-theme-link');
+          if (retroLink) retroLink.disabled = false;
+        } else if (savedTheme === 'sci-fi-theme') {
+          const sciFiLink = document.getElementById('sci-fi-theme-link');
+          if (sciFiLink) sciFiLink.disabled = false;
+        }
+      }
+    });
+  </script>
+</body>
+</html>
